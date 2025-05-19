@@ -37,7 +37,7 @@ t(({ eq }) =>
   eq(gridWordFinder2(grid2, "rat"), [{ x: 2, y: 0, direction: "vertical" }]),
 ); // Vertical match at the last col
 t(({ eq }) => eq(gridWordFinder2(grid, "car"), [])); // No match
-t(({ eq }) => eq(gridWordFinder2(grid, ""), [])); // No match
+t(({ eq }) => eq(gridWordFinder2(grid, ""), [])); // No match for empty word
 Object.freeze(tests);
 
 // Run tests
